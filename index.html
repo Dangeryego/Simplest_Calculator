@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <style>
+        h1 {text-align: center;}
+        </style>
+       
+        <script>
+
+//First Box of Addition
+
+            function dosum(){
+                let firstNumber = Number(document.querySelector("#num1").value)
+                let secondNumber = Number(document.querySelector("#num2").value)
+
+                console.log(firstNumber, secondNumber);
+                console.log(firstNumber + secondNumber);
+
+                let sum = firstNumber + secondNumber;
+                document.querySelector("#result1").innerHTML = sum;
+
+//Second Box of Subtraction
+
+                let thirdNumber = Number(document.querySelector("#num3").value)
+                let fourthNumber = Number(document.querySelector("#num4").value)
+
+                console.log(thirdNumber, fourthNumber);
+                console.log(thirdNumber - fourthNumber);
+
+                let sub = thirdNumber - fourthNumber;
+                document.querySelector("#result2").innerHTML = sub;
+
+//Third Box of Multiplication
+
+                let fifthNumber = Number(document.querySelector("#num5").value)
+                let sixthNumber = Number(document.querySelector("#num6").value)
+
+                console.log(fifthNumber, sixthNumber);
+                console.log(fifthNumber * sixthNumber);
+
+                let mul = fifthNumber * sixthNumber;
+                document.querySelector("#result3").innerHTML = mul;
+
+//Third Box of Diviion
+
+                let seventhNumber = Number(document.querySelector("#num7").value)
+                let eighthNumber = Number(document.querySelector("#num8").value)
+
+                console.log(seventhNumber, eightNumber);
+                console.log(seventhNumber / eightNumber);
+
+                let div = seventhNumber / eightNumber;
+                document.querySelector("#result4").innerHTML = div;
+            }
+        </script>
+
+
+    <h2>Addition</h2>
+
+        <form onsubmit="dosum(); return false">
+            num: <input id="num1" type="number" required>
+            <br>
+            num: <input id="num2" type="number" required>
+            <button type="submit">Sum</button>
+        </form>
+    <h3>The Result is</h3>
+    <h3 id="result1"> </h3>
+    <br><hr>
+
+
+    <h2>Subtraction</h2>
+        
+        <form onsubmit="dosum(); return false">
+            num: <input id="num3" type="number" required>
+            <br>
+            num: <input id="num4" type="number" required>
+            <button type="submit">Subtract</button>
+        </form>
+
+    <h3>The Result is</h3>
+    <h3 id="result2"> </h3>
+    <br><hr>
+
+
+    <h2>Multiplication</h2>
+        
+    <form onsubmit="dosum(); return false">
+        num: <input id="num5" type="number" required>
+        <br>
+        num: <input id="num6" type="number" required>
+        <button type="submit">Multiply</button>
+    </form>
+
+<h3>The Result is</h3>
+<h3 id="result3"> </h3>
+<br><hr>
+
+
+<h2>Division</h2>
+        
+<form onsubmit="dosum(); return false">
+    num: <input id="num7" type="number" required>
+    <br>
+    num: <input id="num8" type="number" required>
+    <button type="submit">Divide</button>
+</form>
+
+<h3>The Result is</h3>
+<h3 id="result4"> </h3>
+
+
+
+
+        
+</body>
+</html>
